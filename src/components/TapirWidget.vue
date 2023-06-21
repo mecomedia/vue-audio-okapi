@@ -1,6 +1,5 @@
 <template>
-  <div class="text-center font-sans w-96 mx-auto rounded-lg shadow-lg border-solid border-2 p-8">
-    <h2 class="font-bold text-2xl">Record Audio Message</h2>
+  <div class="text-center font-sans w-96 mx-auto">
     <div>
       <icon-button
         :style="{ 'border-color': buttonColor }"
@@ -17,18 +16,13 @@
         @click="toggleRecording"
       />
     </div>
-    <div>{{ recordedTime }}</div>
-    <div class="text-sm font-bold">{{ successMessage }}</div>
-    <div class="text-sm">{{ instructionMessage }}</div>
     <div class="text-sm text-red-400">{{ errorMessage }}</div>
     <figure class="mt-8">
       <audio controls :src="recordedAudio" type="audio/mpeg" class="mx-auto">
         Your browser does not support the
         <code>audio</code> element.
       </audio>
-      <figcaption class="text-sm mt-2">Listen to your recording before submitting.</figcaption>
     </figure>
-    <submit-button @submit="sendData" :color="buttonColor" />
   </div>
 </template>
 
@@ -126,7 +120,7 @@ export default {
         this.instructionMessage = null;
       }
       if (this.afterRecording) {
-        this.afterRecording();
+        this.sendData();
       }
     },
     async sendData() {
