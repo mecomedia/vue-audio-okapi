@@ -17,22 +17,15 @@
       />
     </div>
     <div class="text-sm text-red-400">{{ errorMessage }}</div>
-    <figure class="mt-8">
-      <audio controls :src="recordedAudio" type="audio/mpeg" class="mx-auto">
-        Your browser does not support the
-        <code>audio</code> element.
-      </audio>
-    </figure>
   </div>
 </template>
 
 <script>
 import Service from "../api/Service";
-import Recorder from "../lib/Recorder";
-import convertTimeMMSS from "../lib/Utils";
+import Recorder from "lib-wav-audio-recorder"
+import convertTimeMMSS from "convert-time-to-mmss"
 import "../styles/app.css";
 import IconButton from "./IconButton.vue";
-import SubmitButton from "./SubmitButton.vue";
 
 const INSTRUCTION_MESSAGE = "Click icon to start recording message.";
 const INSTRUCTION_MESSAGE_STOP = "Click icon again to stop recording.";
@@ -60,7 +53,6 @@ export default {
   },
   components: {
     IconButton,
-    SubmitButton,
   },
   data() {
     return {

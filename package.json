@@ -1,6 +1,6 @@
 {
-  "name": "vue-audio-tapir",
-  "description": "Audio recorder tapir component for Vue.js 3. It enables to record, play and send audio messages to a server.",
+  "name": "vue-audio-tapir-one-click",
+  "description": "Fork of vue-audio-tapir, Audio recorder tapir component for Vue.js 3. It enables to record, play and send audio messages to a server.",
   "version": "1.5.0",
   "author": {
     "name": "Thomas Derflinger",
@@ -21,7 +21,9 @@
     "recording"
   ],
   "dependencies": {
-    "core-js": "3.19.1"
+    "convert-time-to-mmss": "^1.0.1",
+    "core-js": "3.19.1",
+    "lib-wav-audio-recorder": "^1.0.1"
   },
   "peerDependencies": {
     "vue": "^3.2.39"
