@@ -2,7 +2,7 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ 744:
+/***/ 262:
 /***/ (function(__unused_webpack_module, exports) {
 
 var __webpack_unused_export__;
@@ -10,7 +10,7 @@ var __webpack_unused_export__;
 __webpack_unused_export__ = ({ value: true });
 // runtime helper for setting properties on components
 // in a tree-shakable way
-exports.Z = (sfc, props) => {
+exports.A = (sfc, props) => {
     const target = sfc.__vccOpts || sfc;
     for (const [key, val] of props) {
         target[key] = val;
@@ -72,15 +72,13 @@ exports.Z = (sfc, props) => {
 /******/ 	
 /************************************************************************/
 var __webpack_exports__ = {};
-// This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
-!function() {
 
 // EXPORTS
 __webpack_require__.d(__webpack_exports__, {
   "default": function() { return /* binding */ entry_lib; }
 });
 
-;// CONCATENATED MODULE: ./node_modules/@vue/cli-service/lib/commands/build/setPublicPath.js
+;// ./node_modules/@vue/cli-service/lib/commands/build/setPublicPath.js
 /* eslint-disable no-var */
 // This file is imported into lib/wc client bundles.
 
@@ -97,9 +95,9 @@ if (typeof window !== 'undefined') {
 // Indicate to webpack that this file can be concatenated
 /* harmony default export */ var setPublicPath = (null);
 
-;// CONCATENATED MODULE: external {"commonjs":"vue","commonjs2":"vue","root":"Vue"}
+;// external {"commonjs":"vue","commonjs2":"vue","root":"Vue"}
 var external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject = require("vue");
-;// CONCATENATED MODULE: ./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib/index.js??clonedRuleSet-40.use[1]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[3]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./src/components/TapirWidget.vue?vue&type=template&id=5d67e2a4
+;// ./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib/index.js??clonedRuleSet-40.use[1]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[3]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./src/components/TapirWidget.vue?vue&type=template&id=1e7db76f
 
 const _hoisted_1 = {
   class: "text-center font-sans w-96 mx-auto"
@@ -109,7 +107,6 @@ const _hoisted_2 = {
 };
 function render(_ctx, _cache, $props, $setup, $data, $options) {
   const _component_icon_button = (0,external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.resolveComponent)("icon-button");
-
   return (0,external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.openBlock)(), (0,external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.createElementBlock)("div", _hoisted_1, [(0,external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.createElementVNode)("div", null, [$data.recording ? ((0,external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.openBlock)(), (0,external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.createBlock)(_component_icon_button, {
     key: 0,
     style: (0,external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.normalizeStyle)({
@@ -128,34 +125,31 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     onClick: $options.toggleRecording
   }, null, 8, ["style", "class", "onClick"]))]), (0,external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.createElementVNode)("div", _hoisted_2, (0,external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.toDisplayString)($data.errorMessage), 1)]);
 }
-;// CONCATENATED MODULE: ./src/components/TapirWidget.vue?vue&type=template&id=5d67e2a4
+;// ./src/components/TapirWidget.vue?vue&type=template&id=1e7db76f
 
-;// CONCATENATED MODULE: ./src/api/Service.js
+;// ./src/api/Service.js
 class Service {
   constructor(backendEndpoint) {
     this.backendEndpoint = backendEndpoint;
-  } // returns true if successfull, false if failed
+  }
 
-
+  // returns true if successfull, false if failed
   async postBackend(recordedBlob) {
     try {
       const response = await fetch(this.backendEndpoint, {
         method: "POST",
         body: recordedBlob
       });
-
       if (!response.ok) {
         return false;
       }
-
       return true;
     } catch (error) {
       return false;
     }
   }
-
 }
-;// CONCATENATED MODULE: ./node_modules/lib-wav-encoder/index.js
+;// ./node_modules/lib-wav-encoder/index.js
 /* eslint-disable */
 /* harmony default export */ var lib_wav_encoder = (class {
     constructor(options) {
@@ -223,7 +217,7 @@ class Service {
     }
 });
 
-;// CONCATENATED MODULE: ./node_modules/convert-time-to-mmss/index.js
+;// ./node_modules/convert-time-to-mmss/index.js
 function convertTimeMMSS(seconds) {
     if (!seconds) {
         return null;
@@ -231,7 +225,7 @@ function convertTimeMMSS(seconds) {
     return new Date(seconds * 1000).toISOString().substr(14, 5);
 }
 
-;// CONCATENATED MODULE: ./node_modules/lib-wav-audio-recorder/index.js
+;// ./node_modules/lib-wav-audio-recorder/index.js
 /* eslint-disable */
 
 
@@ -360,7 +354,7 @@ class Recorder {
     }
 }
 
-;// CONCATENATED MODULE: ./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib/index.js??clonedRuleSet-40.use[1]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[3]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./src/components/IconButton.vue?vue&type=template&id=3ae5c9e4
+;// ./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib/index.js??clonedRuleSet-40.use[1]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[3]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./src/components/IconButton.vue?vue&type=template&id=3ae5c9e4
 
 const IconButtonvue_type_template_id_3ae5c9e4_hoisted_1 = ["innerHTML"];
 function IconButtonvue_type_template_id_3ae5c9e4_render(_ctx, _cache, $props, $setup, $data, $options) {
@@ -368,16 +362,15 @@ function IconButtonvue_type_template_id_3ae5c9e4_render(_ctx, _cache, $props, $s
     innerHTML: $data.icons[$props.name]
   }, null, 8, IconButtonvue_type_template_id_3ae5c9e4_hoisted_1);
 }
-;// CONCATENATED MODULE: ./src/components/IconButton.vue?vue&type=template&id=3ae5c9e4
+;// ./src/components/IconButton.vue?vue&type=template&id=3ae5c9e4
 
-;// CONCATENATED MODULE: ./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib/index.js??clonedRuleSet-40.use[1]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./src/components/IconButton.vue?vue&type=script&lang=js
+;// ./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib/index.js??clonedRuleSet-40.use[1]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./src/components/IconButton.vue?vue&type=script&lang=js
 /* harmony default export */ var IconButtonvue_type_script_lang_js = ({
   props: {
     name: {
       type: String
     }
   },
-
   data() {
     return {
       icons: {
@@ -390,22 +383,21 @@ function IconButtonvue_type_template_id_3ae5c9e4_render(_ctx, _cache, $props, $s
       }
     };
   }
-
 });
-;// CONCATENATED MODULE: ./src/components/IconButton.vue?vue&type=script&lang=js
+;// ./src/components/IconButton.vue?vue&type=script&lang=js
  
 // EXTERNAL MODULE: ./node_modules/vue-loader/dist/exportHelper.js
-var exportHelper = __webpack_require__(744);
-;// CONCATENATED MODULE: ./src/components/IconButton.vue
+var exportHelper = __webpack_require__(262);
+;// ./src/components/IconButton.vue
 
 
 
 
 ;
-const __exports__ = /*#__PURE__*/(0,exportHelper/* default */.Z)(IconButtonvue_type_script_lang_js, [['render',IconButtonvue_type_template_id_3ae5c9e4_render]])
+const __exports__ = /*#__PURE__*/(0,exportHelper/* default */.A)(IconButtonvue_type_script_lang_js, [['render',IconButtonvue_type_template_id_3ae5c9e4_render]])
 
 /* harmony default export */ var IconButton = (__exports__);
-;// CONCATENATED MODULE: ./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib/index.js??clonedRuleSet-40.use[1]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./src/components/TapirWidget.vue?vue&type=script&lang=js
+;// ./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib/index.js??clonedRuleSet-40.use[1]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./src/components/TapirWidget.vue?vue&type=script&lang=js
 
 
 
@@ -458,7 +450,6 @@ const ERROR_SUBMITTING_MESSAGE = "Error submitting audio message! Please try aga
   components: {
     IconButton: IconButton
   },
-
   data() {
     return {
       recording: false,
@@ -470,39 +461,31 @@ const ERROR_SUBMITTING_MESSAGE = "Error submitting audio message! Please try aga
       instructionMessage: INSTRUCTION_MESSAGE
     };
   },
-
   computed: {
     buttonClass() {
       return "mx-auto h-14 w-14 fill-current text-black cursor-pointer rounded-50 border-2 m-4 p-2";
     },
-
     recordedTime() {
       if (this.time && this.recorder?.duration >= this.time * 60) {
         this.toggleRecording();
       }
-
       return convertTimeMMSS(this.recorder?.duration);
     }
-
   },
-
   beforeUnmount() {
     if (this.recording) {
       this.stopRecorder();
     }
   },
-
   methods: {
     toggleRecording() {
       this.recording = !this.recording;
-
       if (this.recording) {
         this.initRecorder();
       } else {
         this.stopRecording();
       }
     },
-
     initRecorder() {
       this.recorder = new Recorder({
         micFailed: this.micFailed,
@@ -515,40 +498,33 @@ const ERROR_SUBMITTING_MESSAGE = "Error submitting audio message! Please try aga
       this.instructionMessage = INSTRUCTION_MESSAGE_STOP;
       this.service = new Service(this.backendEndpoint);
     },
-
     stopRecording() {
       this.recorder.stop();
       const recordList = this.recorder.recordList();
       this.recordedAudio = recordList[0].url;
       this.recordedBlob = recordList[0].blob;
-
       if (this.recordedAudio) {
         this.successMessage = SUCCESS_MESSAGE;
         this.instructionMessage = null;
       }
-
       if (this.afterRecording) {
+        this.afterRecording();
         this.sendData();
       }
     },
-
     async sendData() {
       if (!this.recordedBlob) {
         return;
       }
-
       let result = null;
-
       if (this.customUpload) {
         result = await this.customUpload(this.recordedBlob);
       } else {
         result = await this.service.postBackend(this.recordedBlob);
       }
-
       if (result) {
         this.errorMessage = null;
         this.successMessage = SUCCESS_MESSAGE_SUBMIT;
-
         if (this.successfulUpload) {
           this.successfulUpload();
         }
@@ -556,40 +532,36 @@ const ERROR_SUBMITTING_MESSAGE = "Error submitting audio message! Please try aga
         // error uploading
         this.successMessage = null;
         this.errorMessage = ERROR_SUBMITTING_MESSAGE;
-
         if (this.failedUpload) {
           this.failedUpload();
         }
       }
     },
-
     micFailed() {
       this.recording = false;
       this.instructionMessage = INSTRUCTION_MESSAGE;
       this.errorMessage = ERROR_MESSAGE;
     }
-
   }
 });
-;// CONCATENATED MODULE: ./src/components/TapirWidget.vue?vue&type=script&lang=js
+;// ./src/components/TapirWidget.vue?vue&type=script&lang=js
  
-;// CONCATENATED MODULE: ./src/components/TapirWidget.vue
+;// ./src/components/TapirWidget.vue
 
 
 
 
 ;
-const TapirWidget_exports_ = /*#__PURE__*/(0,exportHelper/* default */.Z)(TapirWidgetvue_type_script_lang_js, [['render',render]])
+const TapirWidget_exports_ = /*#__PURE__*/(0,exportHelper/* default */.A)(TapirWidgetvue_type_script_lang_js, [['render',render]])
 
 /* harmony default export */ var TapirWidget = (TapirWidget_exports_);
-;// CONCATENATED MODULE: ./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js
+;// ./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js
 
 
 /* harmony default export */ var entry_lib = (TapirWidget);
 
 
-}();
 module.exports = __webpack_exports__["default"];
 /******/ })()
 ;
-//# sourceMappingURL=vue-audio-tapir.common.js.map
+//# sourceMappingURL=vue-audio-tapirus.common.js.map

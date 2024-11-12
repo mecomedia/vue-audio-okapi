@@ -1,16 +1,16 @@
 {
-  "name": "vue-audio-tapir-one-click",
+  "name": "vue-audio-tapirus",
   "description": "Fork of vue-audio-tapir, Audio recorder tapir component for Vue.js 3. It enables to record, play and send audio messages to a server.",
-  "version": "1.5.2",
+  "version": "0.1.0",
   "author": {
-    "name": "Thomas Derflinger",
-    "url": "https://www.tderflinger.com"
+    "name": "Markus Weiss",
+    "url": "https://www.mecomedia.com"
   },
   "license": "MIT",
   "scripts": {
     "serve": "vue-cli-service serve",
     "lint": "vue-cli-service lint",
-    "build": "NODE_ENV=production && vue-cli-service build --mode production --target lib --name vue-audio-tapir src/components/TapirWidget.vue"
+    "build": "NODE_ENV=production && vue-cli-service build --mode production --target lib --name vue-audio-tapirus src/components/TapirWidget.vue"
   },
   "keywords": [
     "vue",
@@ -36,19 +36,20 @@
     "@vue/cli-service": "^5.0.8",
     "eslint": "^7.32.0",
     "eslint-plugin-vue": "^8.7.1",
+    "microbundle": "^0.15.1",
     "postcss": "^8.4.16",
     "tailwindcss": "^3.1.8"
   },
-  "main": "dist/vue-audio-tapir.common.js",
-  "browser": "dist/vue-audio-tapir.umd.min.js",
+  "main": "dist/vue-audio-tapirus.common.js",
+  "browser": "dist/vue-audio-tapirus.umd.min.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/guluarte/vue-audio-tapir.git"
+    "url": "git+https://github.com/mecomedia/vue-audio-tapirus.git"
   },
   "bugs": {
-    "url": "https://github.com/guluarte/vue-audio-tapir/issues"
+    "url": "https://github.com/mecomedia/vue-audio-tapirus/issues"
   },
-  "homepage": "https://github.com/guluarte/vue-audio-tapir",
+  "homepage": "https://github.com/mecomedia/vue-audio-tapirus",
   "eslintConfig": {
     "root": true,
     "env": {

@@ -112,6 +112,7 @@ export default {
         this.instructionMessage = null;
       }
       if (this.afterRecording) {
+        this.afterRecording();
         this.sendData();
       }
     },
