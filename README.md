@@ -1,7 +1,6 @@
 # vue-audio-tapirus [![npm](https://img.shields.io/npm/v/vue-audio-tapir)](https://www.npmjs.com/package/vue-audio-tapir) [![npm](https://img.shields.io/npm/l/vue-audio-tapir)](https://www.npmjs.com/package/vue-audio-tapir)
 
-Audio recorder component for Vue.js 3 to store voice messages in mp3 file format. It enables to record an audio message 
-and send them to a server in a HTTP POST body.
+Audio recorder component for Vue.js 3 for saving voice messages in mp3 file format. It makes it possible to record an audio message and send it to a server using the HTTP POST body.
 
 ## Use Case
 
