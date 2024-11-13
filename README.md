@@ -1,4 +1,4 @@
-# vue-audio-okapi [![npm](https://img.shields.io/npm/v/vue-audio-tapir)](https://www.npmjs.com/package/vue-audio-tapir) [![npm](https://img.shields.io/npm/l/vue-audio-tapir)](https://www.npmjs.com/package/vue-audio-tapir)
+# vue-audio-okapi [![npm](https://img.shields.io/npm/v/vue-audio-okapi)](https://www.npmjs.com/package/vue-audio-okapi) [![npm](https://img.shields.io/npm/l/vue-audio-okapi)](https://www.npmjs.com/package/vue-audio-okapi)
 
 Audio recorder component for Vue.js 3 for saving voice messages in mp3 file format. It makes it possible to record an audio message and send it to a server using the HTTP POST body.
 
@@ -6,6 +6,8 @@ Audio recorder component for Vue.js 3 for saving voice messages in mp3 file form
 
 The most popular use case of vue-audio-okapi is to upload an audio contact message directly from a website to your server.
  
+<img src="docs/widget.png">
+
 ## Architecture Overview
 
 The developer includes the vue-audio-okapi component in his Vue 3 website. Users can leave 
