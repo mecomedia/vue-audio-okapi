@@ -2,10 +2,7 @@
   "name": "vue-audio-okapi",
   "description": "Fork of vue-audio-tapir-one-click, Audio recorder tapir component for Vue.js 3. It enables to record, play and send audio messages to a server.",
   "version": "0.1.0",
-  "author": {
-    "name": "Markus Weiss",
-    "url": "https://www.mecomedia.com"
-  },
+  "author": "Markus Weiss (https://www.mecomedia.com)",
   "license": "MIT",
   "scripts": {
     "serve": "vue-cli-service serve",
@@ -68,5 +65,8 @@
     "> 1%",
     "last 2 versions",
     "not dead"
-  ]
+  ],
+  "directories": {
+    "doc": "docs"
+  }
 }
