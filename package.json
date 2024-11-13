@@ -1,5 +1,5 @@
 {
-  "name": "vue-audio-tapirus",
+  "name": "vue-audio-okapi",
   "description": "Fork of vue-audio-tapir-one-click, Audio recorder tapir component for Vue.js 3. It enables to record, play and send audio messages to a server.",
   "version": "0.1.0",
   "author": {
@@ -10,7 +10,7 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "lint": "vue-cli-service lint",
-    "build": "NODE_ENV=production && vue-cli-service build --mode production --target lib --name vue-audio-tapirus src/components/TapirWidget.vue"
+    "build": "NODE_ENV=production && vue-cli-service build --mode production --target lib --name vue-audio-okapi src/components/OkapiWidget.vue"
   },
   "keywords": [
     "vue",
@@ -42,16 +42,16 @@
     "tailwindcss": "^3.1.8",
     "lamejs": "^1.2.1"
   },
-  "main": "dist/vue-audio-tapirus.common.js",
-  "browser": "dist/vue-audio-tapirus.umd.min.js",
+  "main": "dist/vue-audio-okapi.common.js",
+  "browser": "dist/vue-audio-okapi.umd.min.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mecomedia/vue-audio-tapirus.git"
+    "url": "git+https://github.com/mecomedia/vue-audio-okapi.git"
   },
   "bugs": {
-    "url": "https://github.com/mecomedia/vue-audio-tapirus/issues"
+    "url": "https://github.com/mecomedia/vue-audio-okapi/issues"
   },
-  "homepage": "https://github.com/mecomedia/vue-audio-tapirus",
+  "homepage": "https://github.com/mecomedia/vue-audio-okapi",
   "eslintConfig": {
     "root": true,
     "env": {

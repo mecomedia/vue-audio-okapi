@@ -1,14 +1,4 @@
-(function webpackUniversalModuleDefinition(root, factory) {
-	if(typeof exports === 'object' && typeof module === 'object')
-		module.exports = factory(require("vue"));
-	else if(typeof define === 'function' && define.amd)
-		define([], factory);
-	else if(typeof exports === 'object')
-		exports["vue-audio-tapirus"] = factory(require("vue"));
-	else
-		root["vue-audio-tapirus"] = factory(root["Vue"]);
-})((typeof self !== 'undefined' ? self : this), function(__WEBPACK_EXTERNAL_MODULE__274__) {
-return /******/ (function() { // webpackBootstrap
+/******/ (function() { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
 /***/ 443:
@@ -16411,14 +16401,6 @@ exports.A = (sfc, props) => {
 };
 
 
-/***/ }),
-
-/***/ 274:
-/***/ (function(module) {
-
-"use strict";
-module.exports = __WEBPACK_EXTERNAL_MODULE__274__;
-
 /***/ })
 
 /******/ 	});
@@ -16510,9 +16492,9 @@ if (typeof window !== 'undefined') {
 // Indicate to webpack that this file can be concatenated
 /* harmony default export */ var entry_lib_setPublicPath = (null);
 
-// EXTERNAL MODULE: external {"commonjs":"vue","commonjs2":"vue","root":"Vue"}
-var entry_lib_external_commonjs_vue_commonjs2_vue_root_Vue_ = __webpack_require__(274);
-;// ./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib/index.js??clonedRuleSet-82.use[1]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[3]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./src/components/TapirWidget.vue?vue&type=template&id=4e36400d
+;// external {"commonjs":"vue","commonjs2":"vue","root":"Vue"}
+var entry_lib_external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject = require("vue");
+;// ./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib/index.js??clonedRuleSet-40.use[1]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[3]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./src/components/OkapiWidget.vue?vue&type=template&id=7f289547
 
 const entry_lib_hoisted_1 = {
   class: "text-center items-center font-sans w-60 h-28 mx-auto"
@@ -16522,45 +16504,45 @@ const entry_lib_hoisted_2 = {
   class: "text-sm text-black"
 };
 function entry_lib_render(_ctx, _cache, $props, $setup, $data, $options) {
-  return (0,entry_lib_external_commonjs_vue_commonjs2_vue_root_Vue_.openBlock)(), (0,entry_lib_external_commonjs_vue_commonjs2_vue_root_Vue_.createElementBlock)("div", entry_lib_hoisted_1, [(0,entry_lib_external_commonjs_vue_commonjs2_vue_root_Vue_.createElementVNode)("div", null, [$data.recording ? ((0,entry_lib_external_commonjs_vue_commonjs2_vue_root_Vue_.openBlock)(), (0,entry_lib_external_commonjs_vue_commonjs2_vue_root_Vue_.createElementBlock)("div", {
+  return (0,entry_lib_external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.openBlock)(), (0,entry_lib_external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.createElementBlock)("div", entry_lib_hoisted_1, [(0,entry_lib_external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.createElementVNode)("div", null, [$data.recording ? ((0,entry_lib_external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.openBlock)(), (0,entry_lib_external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.createElementBlock)("div", {
     key: 0,
-    style: (0,entry_lib_external_commonjs_vue_commonjs2_vue_root_Vue_.normalizeStyle)({
+    style: (0,entry_lib_external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.normalizeStyle)({
       'border-color': $props.buttonColor
     }),
-    class: (0,entry_lib_external_commonjs_vue_commonjs2_vue_root_Vue_.normalizeClass)($options.buttonClass),
+    class: (0,entry_lib_external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.normalizeClass)($options.buttonClass),
     onClick: _cache[0] || (_cache[0] = (...args) => $options.toggleRecording && $options.toggleRecording(...args))
-  }, _cache[2] || (_cache[2] = [(0,entry_lib_external_commonjs_vue_commonjs2_vue_root_Vue_.createElementVNode)("svg", {
+  }, _cache[2] || (_cache[2] = [(0,entry_lib_external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.createElementVNode)("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     viewBox: "0 0 24 24"
-  }, [(0,entry_lib_external_commonjs_vue_commonjs2_vue_root_Vue_.createElementVNode)("path", {
+  }, [(0,entry_lib_external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.createElementVNode)("path", {
     d: "M0 0h24v24H0z",
     fill: "none"
-  }), (0,entry_lib_external_commonjs_vue_commonjs2_vue_root_Vue_.createElementVNode)("path", {
+  }), (0,entry_lib_external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.createElementVNode)("path", {
     d: "M6 6h12v12H6z"
-  })], -1)]), 6)) : ((0,entry_lib_external_commonjs_vue_commonjs2_vue_root_Vue_.openBlock)(), (0,entry_lib_external_commonjs_vue_commonjs2_vue_root_Vue_.createElementBlock)("div", {
+  })], -1)]), 6)) : ((0,entry_lib_external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.openBlock)(), (0,entry_lib_external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.createElementBlock)("div", {
     key: 1,
-    style: (0,entry_lib_external_commonjs_vue_commonjs2_vue_root_Vue_.normalizeStyle)({
+    style: (0,entry_lib_external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.normalizeStyle)({
       'border-color': $props.buttonColor
     }),
-    class: (0,entry_lib_external_commonjs_vue_commonjs2_vue_root_Vue_.normalizeClass)($options.buttonClass),
+    class: (0,entry_lib_external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.normalizeClass)($options.buttonClass),
     onClick: _cache[1] || (_cache[1] = (...args) => $options.toggleRecording && $options.toggleRecording(...args))
-  }, _cache[3] || (_cache[3] = [(0,entry_lib_external_commonjs_vue_commonjs2_vue_root_Vue_.createElementVNode)("svg", {
+  }, _cache[3] || (_cache[3] = [(0,entry_lib_external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.createElementVNode)("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     viewBox: "0 0 24 24"
-  }, [(0,entry_lib_external_commonjs_vue_commonjs2_vue_root_Vue_.createElementVNode)("path", {
+  }, [(0,entry_lib_external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.createElementVNode)("path", {
     d: "M12 14c1.66 0 2.99-1.34 2.99-3L15 5c0-1.66-1.34-3-3-3S9 3.34 9 5v6c0 1.66 1.34 3 3 3zm5.3-3c0 3-2.54 5.1-5.3 5.1S6.7 14 6.7 11H5c0 3.41 2.72 6.23 6 6.72V21h2v-3.28c3.28-.48 6-3.3 6-6.72h-1.7z"
-  }), (0,entry_lib_external_commonjs_vue_commonjs2_vue_root_Vue_.createElementVNode)("path", {
+  }), (0,entry_lib_external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.createElementVNode)("path", {
     d: "M0 0h24v24H0z",
     fill: "none"
-  })], -1)]), 6))]), $data.errorMessage ? ((0,entry_lib_external_commonjs_vue_commonjs2_vue_root_Vue_.openBlock)(), (0,entry_lib_external_commonjs_vue_commonjs2_vue_root_Vue_.createElementBlock)("div", {
+  })], -1)]), 6))]), $data.errorMessage ? ((0,entry_lib_external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.openBlock)(), (0,entry_lib_external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.createElementBlock)("div", {
     key: 0,
     class: "text-sm text-red-400",
-    style: (0,entry_lib_external_commonjs_vue_commonjs2_vue_root_Vue_.normalizeStyle)({
+    style: (0,entry_lib_external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.normalizeStyle)({
       'color': $props.buttonColor
     })
-  }, (0,entry_lib_external_commonjs_vue_commonjs2_vue_root_Vue_.toDisplayString)($data.errorMessage), 5)) : ((0,entry_lib_external_commonjs_vue_commonjs2_vue_root_Vue_.openBlock)(), (0,entry_lib_external_commonjs_vue_commonjs2_vue_root_Vue_.createElementBlock)("div", entry_lib_hoisted_2, (0,entry_lib_external_commonjs_vue_commonjs2_vue_root_Vue_.toDisplayString)($options.recordedTime), 1))]);
+  }, (0,entry_lib_external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.toDisplayString)($data.errorMessage), 5)) : ((0,entry_lib_external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.openBlock)(), (0,entry_lib_external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.createElementBlock)("div", entry_lib_hoisted_2, (0,entry_lib_external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.toDisplayString)($options.recordedTime), 1))]);
 }
-;// ./src/components/TapirWidget.vue?vue&type=template&id=4e36400d
+;// ./src/components/OkapiWidget.vue?vue&type=template&id=7f289547
 
 // EXTERNAL MODULE: ./node_modules/lamejs/src/js/MPEGMode.js
 var entry_lib_MPEGMode = __webpack_require__(676);
@@ -16834,7 +16816,7 @@ class entry_lib_Recorder {
     }
 }
 
-;// ./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib/index.js??clonedRuleSet-82.use[1]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./src/components/TapirWidget.vue?vue&type=script&lang=js
+;// ./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib/index.js??clonedRuleSet-40.use[1]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./src/components/OkapiWidget.vue?vue&type=script&lang=js
 
 
 
@@ -16845,8 +16827,8 @@ const entry_lib_ERROR_MESSAGE = "Failed to use microphone. Please refresh and tr
 const entry_lib_SUCCESS_MESSAGE = "Successfully recorded message!";
 const entry_lib_SUCCESS_MESSAGE_SUBMIT = "Successfully submitted audio message! Thank you!";
 const entry_lib_ERROR_SUBMITTING_MESSAGE = "Error submitting audio message! Please try again later.";
-/* harmony default export */ var entry_lib_TapirWidgetvue_type_script_lang_js = ({
-  name: "TapirusWidget",
+/* harmony default export */ var entry_lib_OkapiWidgetvue_type_script_lang_js = ({
+  name: "OkapiWidget",
   props: {
     // in minutes
     time: {
@@ -16988,29 +16970,27 @@ const entry_lib_ERROR_SUBMITTING_MESSAGE = "Error submitting audio message! Plea
     }
   }
 });
-;// ./src/components/TapirWidget.vue?vue&type=script&lang=js
+;// ./src/components/OkapiWidget.vue?vue&type=script&lang=js
  
 // EXTERNAL MODULE: ./node_modules/vue-loader/dist/exportHelper.js
 var entry_lib_exportHelper = __webpack_require__(262);
-;// ./src/components/TapirWidget.vue
+;// ./src/components/OkapiWidget.vue
 
 
 
 
 ;
-const entry_lib_exports_ = /*#__PURE__*/(0,entry_lib_exportHelper/* default */.A)(entry_lib_TapirWidgetvue_type_script_lang_js, [['render',entry_lib_render]])
+const entry_lib_exports_ = /*#__PURE__*/(0,entry_lib_exportHelper/* default */.A)(entry_lib_OkapiWidgetvue_type_script_lang_js, [['render',entry_lib_render]])
 
-/* harmony default export */ var entry_lib_TapirWidget = (entry_lib_exports_);
+/* harmony default export */ var entry_lib_OkapiWidget = (entry_lib_exports_);
 ;// ./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js
 
 
-/* harmony default export */ var entry_lib_entry_lib = (entry_lib_TapirWidget);
+/* harmony default export */ var entry_lib_entry_lib = (entry_lib_OkapiWidget);
 
 
 }();
-__webpack_exports__ = __webpack_exports__["default"];
-/******/ 	return __webpack_exports__;
+module.exports = __webpack_exports__["default"];
 /******/ })()
 ;
-});
-//# sourceMappingURL=vue-audio-tapirus.umd.js.map
+//# sourceMappingURL=vue-audio-okapi.common.js.map

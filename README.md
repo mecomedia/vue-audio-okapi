@@ -4,42 +4,42 @@ Audio recorder component for Vue.js 3 for saving voice messages in mp3 file form
 
 ## Use Case
 
-The most popular use case of vue-audio-tapirus is to upload an audio contact message directly from a website to your server.
+The most popular use case of vue-audio-okapi is to upload an audio contact message directly from a website to your server.
  
 ## Architecture Overview
 
-The developer includes the vue-audio-tapirus component in his Vue 3 website. Users can leave 
-a voice message and submits it. Vue-audio-tapirus contacts the laravel backend api and uploads the audio data. 
+The developer includes the vue-audio-okapi component in his Vue 3 website. Users can leave 
+a voice message and submits it. Vue-audio-okapi contacts the laravel backend api and uploads the audio data. 
 
 ## Installation
 
 In a Vue 3 application install with:
 
 ```bash
-npm i vue-audio-tapirus --save
+npm i vue-audio-okapi --save
 ```
 
 or
 ```bash
-yarn add vue-audio-tapirus --save
+yarn add vue-audio-okapi --save
 ```
 
 ## Example Usage in vue3
 
 ```html
 <template>
-  <TapirusWidget :time="2" backendEndpoint="https://your-endpoint.com/.netlify/functions/audio-message" 
+  <OkapiWidget :time="2" backendEndpoint="https://your-endpoint.com/.netlify/functions/audio-message" 
                  buttonColor="green"/>
 </template>
 
 <script>
-import TapirusWidget from 'vue-audio-tapirus';
-import 'vue-audio-tapirus/dist/vue-audio-tapirus.css';
+import OkapiWidget from 'vue-audio-okapi';
+import 'vue-audio-okapi/dist/vue-audio-okapi.css';
 
 export default {
   name: 'App',
   components: {
-    TapirWidget,
+    OkapiWidget,
   }
 }
 </script>
@@ -80,7 +80,7 @@ Successfully tested with applications that use Vue 3 and inertiajs.
 ## References
 
 The package bases on a fork of the [vue-audio-tapir](https://github.com/tderflinger/vue-audio-tapir) by: [@tderflinger](https://twitter.com/tderflinger)
-Your can read more about the Audio Tapir project on the blog:
+Your can read more about the Audio Okapi project on the blog:
 https://www.tderflinger.com/en/easily-receive-audio-messages-from-users
 
 This project has been inspired by [vue-audio-recorder](https://github.com/grishkovelli/vue-audio-recorder) by Gennady Grishkovtsov.

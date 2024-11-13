@@ -37,7 +37,7 @@ const SUCCESS_MESSAGE_SUBMIT = "Successfully submitted audio message! Thank you!
 const ERROR_SUBMITTING_MESSAGE = "Error submitting audio message! Please try again later.";
 
 export default {
-  name: "TapirusWidget",
+  name: "OkapiWidget",
   props: {
     // in minutes
     time: { type: Number, default: 1 },

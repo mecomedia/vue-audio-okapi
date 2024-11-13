@@ -6,12 +6,12 @@
 
 <script>
 /* eslint-disable */
-import TapirWidget from './components/TapirWidget.vue';
+import OkapiWidget from './components/OkapiWidget.vue';
 
 export default {
   name: 'App',
   components: {
-    TapirWidget,
+    OkapiWidget,
   },
   computed: {
     backendEndpoint() {
