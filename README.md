@@ -1,23 +1,12 @@
-# vue-audio-tapir [![npm](https://img.shields.io/npm/v/vue-audio-tapir)](https://www.npmjs.com/package/vue-audio-tapir) [![npm](https://img.shields.io/npm/l/vue-audio-tapir)](https://www.npmjs.com/package/vue-audio-tapir) ![Snyk Vulnerabilities for GitHub Repo](https://img.shields.io/snyk/vulnerabilities/github/tderflinger/vue-audio-tapir)
+# vue-audio-tapirus [![npm](https://img.shields.io/npm/v/vue-audio-tapir)](https://www.npmjs.com/package/vue-audio-tapir) [![npm](https://img.shields.io/npm/l/vue-audio-tapir)](https://www.npmjs.com/package/vue-audio-tapir) ![Snyk Vulnerabilities for GitHub Repo](https://img.shields.io/snyk/vulnerabilities/github/tderflinger/vue-audio-tapir)
 
-<div style="text-align: right"><a href="./README-zh.md">中文</a></div>
-<br/>
-
-Audio recorder component for Vue.js 3. It enables to record, play and send audio messages to a server.
-There is a corresponding serverless backend function called [audio-tapir-function](https://github.com/tderflinger/audio-tapir-function).
-You can use both in combination to send you an email with the recorded audio message.
+Audio recorder component for Vue.js 3. It enables to record an audio message and send them to a server in a HTTP POST body.
 
 <img src="./docs/the-tapir-color-new.png" style="display: block; margin: 40px auto; width: 200px" />
 
-## Demo
-
-[Demo page](https://tderflinger.github.io/vue-audio-tapir/) of Audio Tapir,
-you can record and play audio, but submitting is disabled.
-
 ## Use Case
 
-The most popular use case of vue-audio-tapir is to deliver an
-audio contact message directly from a website to your email inbox.
+The most popular use case of vue-audio-tapirus is to deliver an audio contact message directly from a website to your server.
 
 <img src="./docs/screenshot.png" style="display: block; margin: 40px auto; width: 300px" />
  
@@ -25,37 +14,34 @@ audio contact message directly from a website to your email inbox.
 
 <img src="./docs/architecture-overview.png" style="display: block; margin: 40px auto; width: 550px" />
 
-The developer includes the vue-audio-tapir component in his Vue 3 website. When the user of the website
+The developer includes the vue-audio-tapirus component in his Vue 3 website. When the user of the website
 wants to leave a voice message, he records his message and submits it. Vue-audio-tapir contacts the
-backend server, a Netlify serverless function and uploads the audio data. The serverless backend function
-sends the audio data to an email address using the email service Sendgrid.
-Finally the email with the voice message arrives at the destination, probably the email application of the
-website owner.
+backend server, a Netlify serverless function and uploads the audio data. 
 
 ## Installation
 
 In a Vue 3 application install with:
 
 ```bash
-npm i vue-audio-tapir --save
+npm i vue-audio-tapirus --save
 ```
 
 or
 ```bash
-yarn add vue-audio-tapir --save
+yarn add vue-audio-tapirus --save
 ```
 
-## Example Usage
+## Example Usage in vue3
 
 ```html
 <template>
-  <tapir-widget :time="2" backendEndpoint="https://your-endpoint.com/.netlify/functions/audio-message" 
-                buttonColor="green"/>
+  <TapirusWidget :time="2" backendEndpoint="https://your-endpoint.com/.netlify/functions/audio-message" 
+                 buttonColor="green"/>
 </template>
 
 <script>
-import TapirWidget from 'vue-audio-tapir';
-import 'vue-audio-tapir/dist/vue-audio-tapir.css';
+import TapirusWidget from 'vue-audio-tapirus';
+import 'vue-audio-tapirus/dist/vue-audio-tapirus.css';
 
 export default {
   name: 'App',
@@ -82,38 +68,14 @@ export default {
 
 The data sent to the server is encoded in the WAV format.
 
-## Local Development
-
-If you need to run `audio-tapir` locally, run:
-
-```bash
-npm run serve
-```
-
-## Building
-
-If you want to build `audio-tapir` locally, run:
-
-```bash
-npm run build
-```
-
 ## Compatibility
 
-Successfully tested with applications that use Vue 3 and `vue-cli`. 
+Successfully tested with applications that use Vue 3 and inertiajs. 
 
 ## Dependencies
 
 - [Vue 3](https://v3.vuejs.org/)
 - [Tailwindcss](https://tailwindcss.com/)
-
-## More Information
-
-Follow me on Twitter for updates: [@tderflinger](https://twitter.com/tderflinger)
-
-Your can read more about the Audio Tapir project on my blog: 
-
-https://www.tderflinger.com/en/easily-receive-audio-messages-from-users
 
 ## Further Reading
 
@@ -122,8 +84,11 @@ https://www.tderflinger.com/en/easily-receive-audio-messages-from-users
 
 ## References
 
-This project has been inspired by [vue-audio-recorder](https://github.com/grishkovelli/vue-audio-recorder)
-by Gennady Grishkovtsov.
+The package bases on a fork of the vue-audio-tapir by: [@tderflinger](https://twitter.com/tderflinger)
+Your can read more about the Audio Tapir project on the blog:
+https://www.tderflinger.com/en/easily-receive-audio-messages-from-users
+
+This project has been inspired by [vue-audio-recorder](https://github.com/grishkovelli/vue-audio-recorder) by Gennady Grishkovtsov.
 
 ## License
 

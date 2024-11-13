@@ -1,21 +1,23 @@
 <template>
-  <div class="text-center font-sans w-96 mx-auto">
+  <div class="text-center font-sans w-60 mx-auto">
     <div>
-      <icon-button
-        :style="{ 'border-color': buttonColor }"
-        :class="buttonClass"
-        v-if="recording"
-        name="stop"
-        @click="toggleRecording"
-      />
-      <icon-button
-        :style="{ 'border-color': buttonColor }"
-        :class="buttonClass"
-        v-else
-        name="mic"
-        @click="toggleRecording"
-      />
+      <div v-if="recording"
+           :style="{ 'border-color': buttonColor }"
+           :class="buttonClass"
+           @click="toggleRecording">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path d="M0 0h24v24H0z" fill="none"/>
+          <path d="M6 6h12v12H6z"/>
+        </svg>
+      </div>
+      <div v-else
+           :style="{ 'border-color': buttonColor }"
+           :class="buttonClass"
+           @click="toggleRecording">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 14c1.66 0 2.99-1.34 2.99-3L15 5c0-1.66-1.34-3-3-3S9 3.34 9 5v6c0 1.66 1.34 3 3 3zm5.3-3c0 3-2.54 5.1-5.3 5.1S6.7 14 6.7 11H5c0 3.41 2.72 6.23 6 6.72V21h2v-3.28c3.28-.48 6-3.3 6-6.72h-1.7z"/><path d="M0 0h24v24H0z" fill="none"/></svg>
+      </div>
     </div>
+    <div class="text-sm text-red-400">{{ recordedTime }}</div>
     <div class="text-sm text-red-400">{{ errorMessage }}</div>
   </div>
 </template>
@@ -25,7 +27,6 @@ import Service from "../api/Service";
 import Recorder from "lib-wav-audio-recorder"
 import convertTimeMMSS from "convert-time-to-mmss"
 import "../styles/app.css";
-import IconButton from "./IconButton.vue";
 
 const INSTRUCTION_MESSAGE = "Click icon to start recording message.";
 const INSTRUCTION_MESSAGE_STOP = "Click icon again to stop recording.";
@@ -50,9 +51,6 @@ export default {
     successfulUpload: { type: Function },
     failedUpload: { type: Function },
     customUpload: { type: Function, default: null }
-  },
-  components: {
-    IconButton,
   },
   data() {
     return {

@@ -1,6 +1,6 @@
 {
   "name": "vue-audio-tapirus",
-  "description": "Fork of vue-audio-tapir, Audio recorder tapir component for Vue.js 3. It enables to record, play and send audio messages to a server.",
+  "description": "Fork of vue-audio-tapir-one-click, Audio recorder tapir component for Vue.js 3. It enables to record, play and send audio messages to a server.",
   "version": "0.1.0",
   "author": {
     "name": "Markus Weiss",

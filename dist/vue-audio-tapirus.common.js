@@ -97,35 +97,51 @@ if (typeof window !== 'undefined') {
 
 ;// external {"commonjs":"vue","commonjs2":"vue","root":"Vue"}
 var external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject = require("vue");
-;// ./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib/index.js??clonedRuleSet-40.use[1]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[3]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./src/components/TapirWidget.vue?vue&type=template&id=1e7db76f
+;// ./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib/index.js??clonedRuleSet-40.use[1]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[3]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./src/components/TapirWidget.vue?vue&type=template&id=3f68247e
 
 const _hoisted_1 = {
-  class: "text-center font-sans w-96 mx-auto"
+  class: "text-center font-sans w-60 mx-auto"
 };
 const _hoisted_2 = {
   class: "text-sm text-red-400"
 };
+const _hoisted_3 = {
+  class: "text-sm text-red-400"
+};
 function render(_ctx, _cache, $props, $setup, $data, $options) {
-  const _component_icon_button = (0,external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.resolveComponent)("icon-button");
-  return (0,external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.openBlock)(), (0,external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.createElementBlock)("div", _hoisted_1, [(0,external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.createElementVNode)("div", null, [$data.recording ? ((0,external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.openBlock)(), (0,external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.createBlock)(_component_icon_button, {
+  return (0,external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.openBlock)(), (0,external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.createElementBlock)("div", _hoisted_1, [(0,external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.createElementVNode)("div", null, [$data.recording ? ((0,external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.openBlock)(), (0,external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.createElementBlock)("div", {
     key: 0,
     style: (0,external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.normalizeStyle)({
       'border-color': $props.buttonColor
     }),
     class: (0,external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.normalizeClass)($options.buttonClass),
-    name: "stop",
-    onClick: $options.toggleRecording
-  }, null, 8, ["style", "class", "onClick"])) : ((0,external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.openBlock)(), (0,external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.createBlock)(_component_icon_button, {
+    onClick: _cache[0] || (_cache[0] = (...args) => $options.toggleRecording && $options.toggleRecording(...args))
+  }, _cache[2] || (_cache[2] = [(0,external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.createElementVNode)("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    viewBox: "0 0 24 24"
+  }, [(0,external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.createElementVNode)("path", {
+    d: "M0 0h24v24H0z",
+    fill: "none"
+  }), (0,external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.createElementVNode)("path", {
+    d: "M6 6h12v12H6z"
+  })], -1)]), 6)) : ((0,external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.openBlock)(), (0,external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.createElementBlock)("div", {
     key: 1,
     style: (0,external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.normalizeStyle)({
       'border-color': $props.buttonColor
     }),
     class: (0,external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.normalizeClass)($options.buttonClass),
-    name: "mic",
-    onClick: $options.toggleRecording
-  }, null, 8, ["style", "class", "onClick"]))]), (0,external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.createElementVNode)("div", _hoisted_2, (0,external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.toDisplayString)($data.errorMessage), 1)]);
+    onClick: _cache[1] || (_cache[1] = (...args) => $options.toggleRecording && $options.toggleRecording(...args))
+  }, _cache[3] || (_cache[3] = [(0,external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.createElementVNode)("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    viewBox: "0 0 24 24"
+  }, [(0,external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.createElementVNode)("path", {
+    d: "M12 14c1.66 0 2.99-1.34 2.99-3L15 5c0-1.66-1.34-3-3-3S9 3.34 9 5v6c0 1.66 1.34 3 3 3zm5.3-3c0 3-2.54 5.1-5.3 5.1S6.7 14 6.7 11H5c0 3.41 2.72 6.23 6 6.72V21h2v-3.28c3.28-.48 6-3.3 6-6.72h-1.7z"
+  }), (0,external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.createElementVNode)("path", {
+    d: "M0 0h24v24H0z",
+    fill: "none"
+  })], -1)]), 6))]), (0,external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.createElementVNode)("div", _hoisted_2, (0,external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.toDisplayString)($options.recordedTime), 1), (0,external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.createElementVNode)("div", _hoisted_3, (0,external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.toDisplayString)($data.errorMessage), 1)]);
 }
-;// ./src/components/TapirWidget.vue?vue&type=template&id=1e7db76f
+;// ./src/components/TapirWidget.vue?vue&type=template&id=3f68247e
 
 ;// ./src/api/Service.js
 class Service {
@@ -354,51 +370,7 @@ class Recorder {
     }
 }
 
-;// ./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib/index.js??clonedRuleSet-40.use[1]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[3]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./src/components/IconButton.vue?vue&type=template&id=3ae5c9e4
-
-const IconButtonvue_type_template_id_3ae5c9e4_hoisted_1 = ["innerHTML"];
-function IconButtonvue_type_template_id_3ae5c9e4_render(_ctx, _cache, $props, $setup, $data, $options) {
-  return (0,external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.openBlock)(), (0,external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.createElementBlock)("div", {
-    innerHTML: $data.icons[$props.name]
-  }, null, 8, IconButtonvue_type_template_id_3ae5c9e4_hoisted_1);
-}
-;// ./src/components/IconButton.vue?vue&type=template&id=3ae5c9e4
-
-;// ./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib/index.js??clonedRuleSet-40.use[1]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./src/components/IconButton.vue?vue&type=script&lang=js
-/* harmony default export */ var IconButtonvue_type_script_lang_js = ({
-  props: {
-    name: {
-      type: String
-    }
-  },
-  data() {
-    return {
-      icons: {
-        download: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 12v7H5v-7H3v7c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2v-7h-2zm-6 .67l2.59-2.58L17 11.5l-5 5-5-5 1.41-1.41L11 12.67V3h2z"/><path fill="none" d="M0 0h24v24H0z"/></svg>',
-        mic: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 14c1.66 0 2.99-1.34 2.99-3L15 5c0-1.66-1.34-3-3-3S9 3.34 9 5v6c0 1.66 1.34 3 3 3zm5.3-3c0 3-2.54 5.1-5.3 5.1S6.7 14 6.7 11H5c0 3.41 2.72 6.23 6 6.72V21h2v-3.28c3.28-.48 6-3.3 6-6.72h-1.7z"/><path d="M0 0h24v24H0z" fill="none"/></svg>',
-        play: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/><path d="M0 0h24v24H0z" fill="none"/></svg>',
-        save: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"/><path d="M17 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V7l-4-4zm-5 16c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3zm3-10H5V5h10v4z"/></svg>',
-        stop: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"/><path d="M6 6h12v12H6z"/></svg>',
-        volume: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/><path d="M0 0h24v24H0z" fill="none"/></svg>'
-      }
-    };
-  }
-});
-;// ./src/components/IconButton.vue?vue&type=script&lang=js
- 
-// EXTERNAL MODULE: ./node_modules/vue-loader/dist/exportHelper.js
-var exportHelper = __webpack_require__(262);
-;// ./src/components/IconButton.vue
-
-
-
-
-;
-const __exports__ = /*#__PURE__*/(0,exportHelper/* default */.A)(IconButtonvue_type_script_lang_js, [['render',IconButtonvue_type_template_id_3ae5c9e4_render]])
-
-/* harmony default export */ var IconButton = (__exports__);
 ;// ./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib/index.js??clonedRuleSet-40.use[1]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./src/components/TapirWidget.vue?vue&type=script&lang=js
-
 
 
 
@@ -446,9 +418,6 @@ const ERROR_SUBMITTING_MESSAGE = "Error submitting audio message! Please try aga
       type: Function,
       default: null
     }
-  },
-  components: {
-    IconButton: IconButton
   },
   data() {
     return {
@@ -546,15 +515,17 @@ const ERROR_SUBMITTING_MESSAGE = "Error submitting audio message! Please try aga
 });
 ;// ./src/components/TapirWidget.vue?vue&type=script&lang=js
  
+// EXTERNAL MODULE: ./node_modules/vue-loader/dist/exportHelper.js
+var exportHelper = __webpack_require__(262);
 ;// ./src/components/TapirWidget.vue
 
 
 
 
 ;
-const TapirWidget_exports_ = /*#__PURE__*/(0,exportHelper/* default */.A)(TapirWidgetvue_type_script_lang_js, [['render',render]])
+const __exports__ = /*#__PURE__*/(0,exportHelper/* default */.A)(TapirWidgetvue_type_script_lang_js, [['render',render]])
 
-/* harmony default export */ var TapirWidget = (TapirWidget_exports_);
+/* harmony default export */ var TapirWidget = (__exports__);
 ;// ./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js
 
 
