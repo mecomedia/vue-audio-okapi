@@ -1,6 +1,7 @@
 # vue-audio-tapirus [![npm](https://img.shields.io/npm/v/vue-audio-tapir)](https://www.npmjs.com/package/vue-audio-tapir) [![npm](https://img.shields.io/npm/l/vue-audio-tapir)](https://www.npmjs.com/package/vue-audio-tapir)
 
-Audio recorder component for Vue.js 3. It enables to record an audio message and send them to a server in a HTTP POST body.
+Audio recorder component for Vue.js 3 to store voice messages in mp3 file format. It enables to record an audio message 
+and send them to a server in a HTTP POST body.
 
 ## Use Case
 
@@ -47,17 +48,18 @@ export default {
 
 ## Properties
 
-| Name             |  Type    | Description                                       | 
-|------------------|----------|---------------------------------------------------|
-| time             | Number   | Maximum recording time in minutes                 |
-| bitRate          | Number   | Bit rate of recording                             |
-| sampleRate       | Number   | Sample rate of recording                          |
-| backendEndpoint  | String   | URL of the service that receives the data as POST |
-| buttonColor      | String   | Color code of the buttons for theming             |
-| afterRecording   | Function | Callback function when recording is finished.     |
-| successfulUpload | Function | Callback function that is called when data is uploaded successfully. |
-| failedUpload     | Function | Callback function that is called when upload failed. |
+| Name             | Type     | Description                                                                                                      | 
+|------------------|----------|------------------------------------------------------------------------------------------------------------------|
+| time             | Number   | Maximum recording time in minutes                                                                                |
+| bitRate          | Number   | Bit rate of recording                                                                                            |
+| sampleRate       | Number   | Sample rate of recording                                                                                         |
+| backendEndpoint  | String   | URL of the service that receives the data as POST                                                                |
+| buttonColor      | String   | Color code of the buttons for theming                                                                            |
+| afterRecording   | Function | Callback function when recording is finished.                                                                    |
+| successfulUpload | Function | Callback function that is called when data is uploaded successfully.                                             |
+| failedUpload     | Function | Callback function that is called when upload failed.                                                             |
 | customUpload     | Function | Custom upload function that expects the audio blob as parameter. Returns true when successful, false when error. |
+| visible          | Boolean  | If the widget is visible on the website. "false" stops the recording.                                            |                                                                                          |
 
 The data sent to the server is encoded in the MP3 format.
 

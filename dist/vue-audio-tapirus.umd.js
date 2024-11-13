@@ -16512,16 +16512,14 @@ if (typeof window !== 'undefined') {
 
 // EXTERNAL MODULE: external {"commonjs":"vue","commonjs2":"vue","root":"Vue"}
 var entry_lib_external_commonjs_vue_commonjs2_vue_root_Vue_ = __webpack_require__(274);
-;// ./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib/index.js??clonedRuleSet-82.use[1]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[3]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./src/components/TapirWidget.vue?vue&type=template&id=13fecb24
+;// ./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib/index.js??clonedRuleSet-82.use[1]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[3]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./src/components/TapirWidget.vue?vue&type=template&id=4e36400d
 
 const entry_lib_hoisted_1 = {
-  class: "text-center font-sans w-60 mx-auto"
+  class: "text-center items-center font-sans w-60 h-28 mx-auto"
 };
 const entry_lib_hoisted_2 = {
-  class: "text-sm text-red-400"
-};
-const entry_lib_hoisted_3 = {
-  class: "text-sm text-red-400"
+  key: 1,
+  class: "text-sm text-black"
 };
 function entry_lib_render(_ctx, _cache, $props, $setup, $data, $options) {
   return (0,entry_lib_external_commonjs_vue_commonjs2_vue_root_Vue_.openBlock)(), (0,entry_lib_external_commonjs_vue_commonjs2_vue_root_Vue_.createElementBlock)("div", entry_lib_hoisted_1, [(0,entry_lib_external_commonjs_vue_commonjs2_vue_root_Vue_.createElementVNode)("div", null, [$data.recording ? ((0,entry_lib_external_commonjs_vue_commonjs2_vue_root_Vue_.openBlock)(), (0,entry_lib_external_commonjs_vue_commonjs2_vue_root_Vue_.createElementBlock)("div", {
@@ -16554,9 +16552,15 @@ function entry_lib_render(_ctx, _cache, $props, $setup, $data, $options) {
   }), (0,entry_lib_external_commonjs_vue_commonjs2_vue_root_Vue_.createElementVNode)("path", {
     d: "M0 0h24v24H0z",
     fill: "none"
-  })], -1)]), 6))]), (0,entry_lib_external_commonjs_vue_commonjs2_vue_root_Vue_.createElementVNode)("div", entry_lib_hoisted_2, (0,entry_lib_external_commonjs_vue_commonjs2_vue_root_Vue_.toDisplayString)($options.recordedTime), 1), (0,entry_lib_external_commonjs_vue_commonjs2_vue_root_Vue_.createElementVNode)("div", entry_lib_hoisted_3, (0,entry_lib_external_commonjs_vue_commonjs2_vue_root_Vue_.toDisplayString)($data.errorMessage), 1)]);
+  })], -1)]), 6))]), $data.errorMessage ? ((0,entry_lib_external_commonjs_vue_commonjs2_vue_root_Vue_.openBlock)(), (0,entry_lib_external_commonjs_vue_commonjs2_vue_root_Vue_.createElementBlock)("div", {
+    key: 0,
+    class: "text-sm text-red-400",
+    style: (0,entry_lib_external_commonjs_vue_commonjs2_vue_root_Vue_.normalizeStyle)({
+      'color': $props.buttonColor
+    })
+  }, (0,entry_lib_external_commonjs_vue_commonjs2_vue_root_Vue_.toDisplayString)($data.errorMessage), 5)) : ((0,entry_lib_external_commonjs_vue_commonjs2_vue_root_Vue_.openBlock)(), (0,entry_lib_external_commonjs_vue_commonjs2_vue_root_Vue_.createElementBlock)("div", entry_lib_hoisted_2, (0,entry_lib_external_commonjs_vue_commonjs2_vue_root_Vue_.toDisplayString)($options.recordedTime), 1))]);
 }
-;// ./src/components/TapirWidget.vue?vue&type=template&id=13fecb24
+;// ./src/components/TapirWidget.vue?vue&type=template&id=4e36400d
 
 // EXTERNAL MODULE: ./node_modules/lamejs/src/js/MPEGMode.js
 var entry_lib_MPEGMode = __webpack_require__(676);
@@ -16842,7 +16846,7 @@ const entry_lib_SUCCESS_MESSAGE = "Successfully recorded message!";
 const entry_lib_SUCCESS_MESSAGE_SUBMIT = "Successfully submitted audio message! Thank you!";
 const entry_lib_ERROR_SUBMITTING_MESSAGE = "Error submitting audio message! Please try again later.";
 /* harmony default export */ var entry_lib_TapirWidgetvue_type_script_lang_js = ({
-  name: "TapirWidget",
+  name: "TapirusWidget",
   props: {
     // in minutes
     time: {
@@ -16863,6 +16867,10 @@ const entry_lib_ERROR_SUBMITTING_MESSAGE = "Error submitting audio message! Plea
     buttonColor: {
       type: String,
       default: "green"
+    },
+    visible: {
+      type: Boolean,
+      default: true
     },
     // callback functions
     afterRecording: {
@@ -16895,11 +16903,17 @@ const entry_lib_ERROR_SUBMITTING_MESSAGE = "Error submitting audio message! Plea
       return "mx-auto h-14 w-14 fill-current text-black cursor-pointer rounded-50 border-2 m-4 p-2";
     },
     recordedTime() {
-      if (this.time && this.recorder?.duration >= this.time * 60) {
+      if (this.recording && !this.visible || this.time && this.recorder?.duration >= this.time * 60) {
         this.toggleRecording();
+        console.log('Recoding interrupted');
       }
-      return this.recorder?.duration;
-      //     return convertTimeMMSS(this.recorder?.duration);
+      if (this.recorder?.duration < 0.5) {
+        return "Please wait";
+      } else if (this.recorder?.duration) {
+        return entry_lib_convertTimeMMSS(this.time * 60 - this.recorder?.duration);
+      } else {
+        return "Start recording";
+      }
     }
   },
   beforeUnmount() {
