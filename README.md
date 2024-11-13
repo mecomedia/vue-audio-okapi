@@ -1,22 +1,15 @@
-# vue-audio-tapirus [![npm](https://img.shields.io/npm/v/vue-audio-tapir)](https://www.npmjs.com/package/vue-audio-tapir) [![npm](https://img.shields.io/npm/l/vue-audio-tapir)](https://www.npmjs.com/package/vue-audio-tapir) ![Snyk Vulnerabilities for GitHub Repo](https://img.shields.io/snyk/vulnerabilities/github/tderflinger/vue-audio-tapir)
+# vue-audio-tapirus [![npm](https://img.shields.io/npm/v/vue-audio-tapir)](https://www.npmjs.com/package/vue-audio-tapir) [![npm](https://img.shields.io/npm/l/vue-audio-tapir)](https://www.npmjs.com/package/vue-audio-tapir)
 
 Audio recorder component for Vue.js 3. It enables to record an audio message and send them to a server in a HTTP POST body.
 
-<img src="./docs/the-tapir-color-new.png" style="display: block; margin: 40px auto; width: 200px" />
-
 ## Use Case
 
-The most popular use case of vue-audio-tapirus is to deliver an audio contact message directly from a website to your server.
-
-<img src="./docs/screenshot.png" style="display: block; margin: 40px auto; width: 300px" />
+The most popular use case of vue-audio-tapirus is to upload an audio contact message directly from a website to your server.
  
 ## Architecture Overview
 
-<img src="./docs/architecture-overview.png" style="display: block; margin: 40px auto; width: 550px" />
-
-The developer includes the vue-audio-tapirus component in his Vue 3 website. When the user of the website
-wants to leave a voice message, he records his message and submits it. Vue-audio-tapir contacts the
-backend server, a Netlify serverless function and uploads the audio data. 
+The developer includes the vue-audio-tapirus component in his Vue 3 website. Users can leave 
+a voice message and submits it. Vue-audio-tapirus contacts the laravel backend api and uploads the audio data. 
 
 ## Installation
 
@@ -66,7 +59,7 @@ export default {
 | failedUpload     | Function | Callback function that is called when upload failed. |
 | customUpload     | Function | Custom upload function that expects the audio blob as parameter. Returns true when successful, false when error. |
 
-The data sent to the server is encoded in the WAV format.
+The data sent to the server is encoded in the MP3 format.
 
 ## Compatibility
 
@@ -76,15 +69,16 @@ Successfully tested with applications that use Vue 3 and inertiajs.
 
 - [Vue 3](https://v3.vuejs.org/)
 - [Tailwindcss](https://tailwindcss.com/)
+- [Lamejs](https://github.com/zhuker/lamejs)
 
 ## Further Reading
 
 - [Web Audio API on MDN](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API)
-- [WAV File Format](https://en.wikipedia.org/wiki/WAV)
+- [MP3 File Format](https://en.wikipedia.org/wiki/MP3)
 
 ## References
 
-The package bases on a fork of the vue-audio-tapir by: [@tderflinger](https://twitter.com/tderflinger)
+The package bases on a fork of the [vue-audio-tapir](https://github.com/tderflinger/vue-audio-tapir) by: [@tderflinger](https://twitter.com/tderflinger)
 Your can read more about the Audio Tapir project on the blog:
 https://www.tderflinger.com/en/easily-receive-audio-messages-from-users
 

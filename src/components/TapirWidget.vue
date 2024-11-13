@@ -71,7 +71,8 @@ export default {
       if (this.time && this.recorder?.duration >= this.time * 60) {
         this.toggleRecording();
       }
-      return convertTimeMMSS(this.recorder?.duration);
+      return this.recorder?.duration;
+ //     return convertTimeMMSS(this.recorder?.duration);
     },
   },
   beforeUnmount() {
